@@ -1,7 +1,7 @@
 
 cd ../exercises/$TO_GRADE
 
-gcc *.c -o app
+gcc *.c -lm -o app
 
 OUTPUT=$(./app)
 expected_output="distance = 8.25"

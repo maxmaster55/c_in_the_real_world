@@ -1,20 +1,23 @@
 #!/bin/bash
 
 cd grader
+
 # Check if the TO_GRADE environment variable is set
 if [ -z "$TO_GRADE" ]; then
   echo "TO_GRADE environment variable is not set."
   exit 1
 fi
 
+script_name=${TO_GRADE}.sh
+
 # Check if the script with the specified name exists
-if [ ! -f "$TO_GRADE" ]; then
-  echo "Script '$TO_GRADE' does not exist."
+if [ ! -f "$script_name" ]; then
+  echo "Script '$script_name' does not exist."
   exit 1
 fi
 
 # Make the script executable (if it's not already)
-chmod +x "$TO_GRADE"
+chmod +x "$script_name"
 
 # Run the script
-./"$TO_GRADE"
+./"$script_name"

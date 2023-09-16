@@ -1,4 +1,6 @@
 
+cd ../exercises/$TO_GRADE
+
 gcc *.c -o app
 
 OUTPUT=${./app}

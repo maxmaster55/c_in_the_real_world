@@ -16,7 +16,7 @@ jobs:
     - name: Set TO_GRADE variable from to_grade.txt
       run: |
         script_name=$(cat to_grade.txt)
-        echo "TO_GRADE=$script_name" >> $GITHUB_ENV
+        echo "TO_GRADE=${script_name}.sh" >> $GITHUB_ENV
 
     - name: Make grader script executable
       run: chmod +x grader/grader.sh

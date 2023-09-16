@@ -7,6 +7,7 @@ Some c examples for my friends to learn how to use c in the real world ™
 - Fork this repo.
 - Clone locally.
 - Once you finish the exercise commit.
+- write the name of the exercise in the __to_grade.txt__ file (important)
 - Push the code.
 - Look for your result in the actions tap.
     ![Image](</images/Screenshot 2023-09-16 100233.png>)

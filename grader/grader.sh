@@ -13,7 +13,7 @@ if [ ! -f "$TO_GRADE" ]; then
 fi
 
 # Make the script executable (if it's not already)
-chmod +x "$TO_GRADE"
+chmod +x "$TO_GRADE.sh"
 
 # Run the script
-./"$TO_GRADE"
+./"$TO_GRADE.sh"

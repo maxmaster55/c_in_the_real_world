@@ -1,5 +1,6 @@
 #!/bin/bash
 
+cd grader
 # Check if the TO_GRADE environment variable is set
 if [ -z "$TO_GRADE" ]; then
   echo "TO_GRADE environment variable is not set."

@@ -1,4 +1,3 @@
-cd ex1
 
 gcc *.c -o app
 

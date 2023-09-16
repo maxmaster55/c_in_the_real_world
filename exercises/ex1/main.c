@@ -26,7 +26,7 @@ int main(){
     point_t p2 = {9, 8};
 
 
-    printf("distance = %.2f\n", point_get_distance(p1, p2));
+    printf("distance=%.2f", point_get_distance(p1, p2));
 
     return 0;
 }

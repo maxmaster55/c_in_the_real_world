@@ -1,17 +1,17 @@
 
-cd ../exercises/$TO_GRADE
+ex_path=../exercises/$TO_GRADE
+cd $ex_path
+pwd
+gcc ./*.c -lm -o app
 
-gcc *.c -lm -o app
-
-OUTPUT=$(./app)
-expected_output="distance = 8.25"
-
-if [ "$output" = "$expected_output" ]; then
+output=$(./app)
+expected_output="distance=8.25"
+if [[ "$output" == "$expected_output" ]]; then
   echo "Test passed: Output matches expected value."
-  exist 0
+  exit 0
 else
   echo "Test failed: Output does not match expected value."
-  exist 1
+  exit 1
 fi
 
 

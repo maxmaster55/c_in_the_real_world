@@ -3,7 +3,7 @@ cd ../exercises/$TO_GRADE
 
 gcc *.c -o app
 
-OUTPUT=${./app}
+OUTPUT=$(./app)
 expected_output="distance = 8.25"
 
 if [ "$output" = "$expected_output" ]; then

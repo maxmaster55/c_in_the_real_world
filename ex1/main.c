@@ -21,6 +21,6 @@ int main(){
 
 
 
-    printf("the distance is: %.2f\n", PLACEHOLDER);
+    printf("distance = %.2f\n", PLACEHOLDER);
     return 0;
 }

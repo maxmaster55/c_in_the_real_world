@@ -1,0 +1,25 @@
+name: Grader Action
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  run-grader:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Set TO_GRADE variable from to_grade.txt
+      run: |
+        script_name=$(cat grader/to_grade.txt)
+        echo "TO_GRADE=$script_name" >> $GITHUB_ENV
+
+    - name: Make grader script executable
+      run: chmod +x grader/grader.sh
+
+    - name: Run grader script
+      run: grader/grader.sh

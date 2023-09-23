@@ -30,11 +30,11 @@ go into the directory you are working in and type.
 - if you find something called __MinGW__ you are in the correct path.
 
 ```bash
-gcc *.c -o app.exe 
+gcc ex[number]/*.c -o ex[number]/app.exe 
 ```
 
 ## to run
 
 ```bash
-./app.exe
+ex[number]/app.exe
 ```
